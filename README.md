@@ -4,8 +4,9 @@
 
 ```bash
 virtualenv -p python3 venv
-source venv/bin/active
+source venv/bin/activate
 pip install -r requirements.txt
+cd reachout
 python manage.py migrate
 python manage.py createsuperuser
 ```
@@ -14,6 +15,7 @@ python manage.py createsuperuser
 
 ```bash
 source venv/bin/activate
+cd reachout 
 python manage.py test
 python manage.py runserver
 ```
